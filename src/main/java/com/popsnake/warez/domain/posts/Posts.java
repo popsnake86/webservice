@@ -1,5 +1,4 @@
 package com.popsnake.warez.domain.posts;
-
 import com.popsnake.warez.domain.BaseTimeEntity;
 
 import lombok.Builder;
