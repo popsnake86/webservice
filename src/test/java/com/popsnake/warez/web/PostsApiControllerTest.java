@@ -40,6 +40,7 @@ public class PostsApiControllerTest {
         postsRepository.deleteAll();
     }
 
+    /*
     @Test
     public void Posts_등록된다() throws Exception {
         //given
@@ -98,4 +99,6 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).isEqualTo((expectedContent));
 
     }
+
+     */
 }
