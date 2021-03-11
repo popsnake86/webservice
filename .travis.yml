@@ -18,9 +18,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r webservice
+  - zip -r popsnake-webservice
   - mkdir -p deploy
-  - mv webservice.zip deploy/webservice.zip
+  - mv popsnake-webservice.zip deploy/popsnake-webservice.zip
 
 deploy:
   - provider: s3
