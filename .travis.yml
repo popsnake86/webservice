@@ -33,6 +33,17 @@ deploy:
     local_dir: deploy
     wait-until-deployed: true
 
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    bucket: popsnake-build
+    key: webservice.zip
+    bundle_type: zip
+    application: popsnake-webservice
+    deployment_group: popsnake-webservice-group
+    region: ap-northeast-2
+    wait-until-deployed: true
+
+
 # CI 실행 완료 시 메일로 알람
 notifications:
   email:
