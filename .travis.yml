@@ -38,8 +38,8 @@ deploy:
     bucket: popsnake-build
     key: webservice.zip
     bundle_type: zip
-    application: popsnake-webservice
-    deployment_group: popsnake-webservice-group
+    application: webservice
+    deployment_group: webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
 
